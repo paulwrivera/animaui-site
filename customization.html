@@ -1,0 +1,363 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/906af3d18e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>AnimaUI Documentation</title>
+  </head>
+  <body>
+    <!-- <div class="container height-5 top-0 mx-auto justify-center items-center">
+
+    </div> -->
+    <div class="container">
+      <nav class="navbar-off-white text-black mb-2 height-5 sticky top-0 z-10">
+        <div class="col-3-sm fullwidth">
+          <h2 class="site-title text-left text-dark-gray">AnimaUI</h2>
+        </div>
+        <div class="col-6-sm bg-off-white flex justify-center fullwidth">
+          <a href="/index.html" class="grow"><img
+            src="/img/animaui-transparent.png"
+            class="site-logo width-4 height-4"
+          /></a>
+        </div>
+        <div class="col-3-sm flex flex-row justify-end items-center fullwidth">
+          <a href="" class="text-dark-gray link-hover-yellow"><i class="fa-brands fa-github fa-xl mmr-2"></a></i>
+        </div>
+      </nav>
+
+      <div class="flex flex-row gap-1 flex-flow-row-wrap z-0">
+        <aside id="reset" class="col-12-sm col-2-md col-2-lg mb-2">
+          <div
+            class="flex flex-col self-start overflow-y-auto hamnav laptop-fixed"
+          >
+            <label for="hamburger"
+              ><btn class="btn-wire-yellow fullwidth text-center"
+                >&#9776;</btn
+              ></label
+            >
+            <input type="checkbox" id="hamburger" />
+            <ul
+              class="hamitems docheight overflow-y-auto z-0 scroll-yellow docwidth"
+            >
+              <li class="font-xs mb-2 mlneg185">
+                <a href="/documentation.html" class="link-blue-d4"
+                  ><i class="fa-solid fa-book fa-lg text-red mr-1 ml1px"></i
+                  >Documentation</a
+                >
+              </li>
+              <li class="font-xs mb-2 mlneg185">
+                <a href="https://github.com" class="link-blue-d4"
+                  ><i
+                    class="fa-brands fa-github-alt fa-lg text-dark-gray mr-1 ml1px"
+                  ></i
+                  >Github</a
+                >
+              </li>
+              <li class="font-xs mb-2 mlneg185">
+                <a href="/aboutdoc.html" class="link-blue-d4"
+                  ><i class="fa-solid fa-heart fa-lg text-secondary-d2 mr-1 ml1px"></i
+                  >About</a
+                >
+              </li>
+              <li><p class="font-sm">Getting started</p></li>
+              <ul class="mt-1 mml-0">
+                <li class="mt-1">
+                  <a href="/documentation.html#installation" class="link-blue-d4 font-xs"
+                    >Installation</a
+                  >
+                </li>
+                <li class="mt-1">
+                  <a href="/documentation.html#release-notes" class="link-blue-d4 font-xs"
+                    >Release notes</a
+                  >
+                </li>
+                <li class="mt-1">
+                  <a href="/documentation.html#coming-soon" class="link-blue-d4 font-xs">Coming Soon</a>
+                </li>
+              </ul>
+              <li class="mt-2">
+                <p class="font-sm">Customization</p>
+              </li>
+              <ul class="mml-0">
+                <li class="mt-1">
+                  <a href="/customization.html#base" class="link-blue-d4 font-xs">Base</a>
+                </li>
+                <li class="mt-1">
+                  <a href="/customization.html#colors" class="link-blue-d4 font-xs">Colors</a>
+                </li>
+                <li class="mt-1">
+                  <a href="/customization.html#font-text" class="link-blue-d4 font-xs">Font & Text</a>
+                </li>
+                <li class="mt-1">
+                  <a href="/customization.html#breakpoints" class="link-blue-d4 font-xs">Breakpoints</a>
+                </li>
+              </ul>
+              <li class="mt-2">
+                <p class="font-sm">Using AnimaUI</p>
+              </li>
+              <ul class="mml-0">
+                <li class="mt-1">
+                  <a href="/how-to-use.html#layout" class="link-blue-d4 font-xs">Layout</a>
+                </li>
+                <li class="mt-1">
+                  <a href="/how-to-use.html#flexbox" class="link-blue-d4 font-xs">Flexbox</a>
+                </li>
+                <li class="mt-1">
+                  <a href="#/how-to-use.html#sizing" class="link-blue-d4 font-xs">Sizing</a>
+                </li>
+                <li class="mt-1">
+                  <a href="/how-to-use.html#typography" class="link-blue-d4 font-xs">Typography</a>
+                </li>
+                <li class="mt-1">
+                  <a href="/how-to-use.html#borders" class="link-blue-d4 font-xs">Borders</a>
+                </li>
+                <li class="mt-1">
+                  <a href="/how-to-use.html#effects" class="link-blue-d4 font-xs">Effects</a>
+                </li>
+                <li class="mt-1">
+                  <a href="/components.html" class="link-blue-d4 font-xs pb-2">Components</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </aside>
+        <div class="col-12-sm col-8-lg">
+          <div class="text-left">
+            <h2 class="mb-1" id="colors">Colors</h2>
+            <p>
+              AnimaUI comes with a variety of predefined colors to rapidly
+              deploy your website.
+            </p>
+            <div
+              class="mb-2 mt-2 border-bottom-2 border-top-0 border-left-0 border-right-0 border-solid border-gray-l6 p-0 z-0"
+            ></div>
+            <p>
+              If you need to further customize your colors, you can do so in the
+              _variables.scss file.
+            </p>
+          </div>
+          <div class="flex flex-col text-center mb-2">
+            <div class="maxwidthp-100">
+            <div class="flex flex-col">
+              <h3 id="primary" class="text-left mb-1 pt-3">Primary</h3>
+              <span class="bg-primary-l8 text-white p-1">primary-l8</span>
+              <span class="bg-primary-l6 text-white p-1">primary-l6</span>
+              <span class="bg-primary-l4 text-white p-1">primary-l4</span>
+              <span class="bg-primary-l2 text-white p-1">primary-l2</span>
+              <span class="bg-primary text-white p-1">primary </span>
+              <span class="bg-primary-d2 text-white p-1">primary-d2</span>
+              <span class="bg-primary-d4 text-white p-1">primary-d4</span>
+              <span class="bg-primary-d6 text-white p-1">primary-d6</span>
+              <span class="bg-primary-d8 text-white p-1">primary-d8</span>
+            </div>
+            <h3 id="secondary" class="text-left pt-3">Secondary</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-secondary-l8 text-white p-1">secondary-l8</span>
+              <span class="bg-secondary-l6 text-white p-1">secondary-l6</span>
+              <span class="bg-secondary-l4 text-white p-1">secondary-l4</span>
+              <span class="bg-secondary-l2 text-white p-1">secondary-l2</span>
+              <span class="bg-secondary text-white p-1">secondary </span>
+              <span class="bg-secondary-d2 text-white p-1">secondary-d2</span>
+              <span class="bg-secondary-d4 text-white p-1">secondary-d4</span>
+              <span class="bg-secondary-d6 text-white p-1">secondary-d6</span>
+              <span class="bg-secondary-d8 text-white p-1">secondary-d8</span>
+            </div>
+            <h3 id="error" class="text-left pt-3">Error</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-error-l8 text-white p-1">error-l8</span>
+              <span class="bg-error-l6 text-white p-1">error-l6</span>
+              <span class="bg-error-l4 text-white p-1">error-l4</span>
+              <span class="bg-error-l2 text-white p-1">error-l2</span>
+              <span class="bg-error text-white p-1">error </span>
+              <span class="bg-error-d2 text-white p-1">error-d2</span>
+              <span class="bg-error-d4 text-white p-1">error-d4</span>
+              <span class="bg-error-d6 text-white p-1">error-d6</span>
+              <span class="bg-error-d8 text-white p-1">error-d8</span>
+            </div>
+            <h3 id="info" class="text-left pt-3">Info</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-info-l8 text-white p-1">info-l8</span>
+              <span class="bg-info-l6 text-white p-1">info-l6</span>
+              <span class="bg-info-l4 text-white p-1">info-l4</span>
+              <span class="bg-info-l2 text-white p-1">info-l2</span>
+              <span class="bg-info text-white p-1">info </span>
+              <span class="bg-info-d2 text-white p-1">info-d2</span>
+              <span class="bg-info-d4 text-white p-1">info-d4</span>
+              <span class="bg-info-d6 text-white p-1">info-d6</span>
+              <span class="bg-info-d8 text-white p-1">info-d8</span>
+            </div>
+            <h3 id="blue" class="text-left pt-3">Blue</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-blue-l8 text-white p-1">blue-l8</span>
+              <span class="bg-blue-l6 text-white p-1">blue-l6</span>
+              <span class="bg-blue-l4 text-white p-1">blue-l4</span>
+              <span class="bg-blue-l2 text-white p-1">blue-l2</span>
+              <span class="bg-blue text-white p-1">blue </span>
+              <span class="bg-blue-d2 text-white p-1">blue-d2</span>
+              <span class="bg-blue-d4 text-white p-1">blue-d4</span>
+              <span class="bg-blue-d6 text-white p-1">blue-d6</span>
+              <span class="bg-blue-d8 text-white p-1">blue-d8</span>
+            </div>
+            <h3 id="coral" class="text-left pt-3">Coral</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-coral-l8 text-white p-1">coral-l8</span>
+              <span class="bg-coral-l6 text-white p-1">coral-l6</span>
+              <span class="bg-coral-l4 text-white p-1">coral-l4</span>
+              <span class="bg-coral-l2 text-white p-1">coral-l2</span>
+              <span class="bg-coral text-white p-1">coral </span>
+              <span class="bg-coral-d2 text-white p-1">coral-d2</span>
+              <span class="bg-coral-d4 text-white p-1">coral-d4</span>
+              <span class="bg-coral-d6 text-white p-1">coral-d6</span>
+              <span class="bg-coral-d8 text-white p-1">coral-d8</span>
+            </div>
+            <h3 id="red" class="text-left pt-3">Red</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-red-l8 text-white p-1">red-l8</span>
+              <span class="bg-red-l6 text-white p-1">red-l6</span>
+              <span class="bg-red-l4 text-white p-1">red-l4</span>
+              <span class="bg-red-l2 text-white p-1">red-l2</span>
+              <span class="bg-red text-white p-1">red </span>
+              <span class="bg-red-d2 text-white p-1">red-d2</span>
+              <span class="bg-red-d4 text-white p-1">red-d4</span>
+              <span class="bg-red-d6 text-white p-1">red-d6</span>
+              <span class="bg-red-d8 text-white p-1">red-d8</span>
+            </div>
+            <h3 id="yellow" class="text-left pt-3">Yellow</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-yellow-l8 text-white p-1">yellow-l8</span>
+              <span class="bg-yellow-l6 text-white p-1">yellow-l6</span>
+              <span class="bg-yellow-l4 text-white p-1">yellow-l4</span>
+              <span class="bg-yellow-l2 text-white p-1">yellow-l2</span>
+              <span class="bg-yellow text-white p-1">yellow </span>
+              <span class="bg-yellow-d2 text-white p-1">yellow-d2</span>
+              <span class="bg-yellow-d4 text-white p-1">yellow-d4</span>
+              <span class="bg-yellow-d6 text-white p-1">yellow-d6</span>
+              <span class="bg-yellow-d8 text-white p-1">yellow-d8</span>
+            </div>
+            <h3 id="green" class="text-left pt-3">Green</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-green-l8 text-white p-1">green-l8</span>
+              <span class="bg-green-l6 text-white p-1">green-l6</span>
+              <span class="bg-green-l4 text-white p-1">green-l4</span>
+              <span class="bg-green-l2 text-white p-1">green-l2</span>
+              <span class="bg-green text-white p-1">green </span>
+              <span class="bg-green-d2 text-white p-1">green-d2</span>
+              <span class="bg-green-d4 text-white p-1">green-d4</span>
+              <span class="bg-green-d6 text-white p-1">green-d6</span>
+              <span class="bg-green-d8 text-white p-1">green-d8</span>
+            </div>
+            <h3 id="orange" class="text-left pt-3">Orange</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-orange-l8 text-white p-1">orange-l8</span>
+              <span class="bg-orange-l6 text-white p-1">orange-l6</span>
+              <span class="bg-orange-l4 text-white p-1">orange-l4</span>
+              <span class="bg-orange-l2 text-white p-1">orange-l2</span>
+              <span class="bg-orange text-white p-1">orange </span>
+              <span class="bg-orange-d2 text-white p-1">orange-d2</span>
+              <span class="bg-orange-d4 text-white p-1">orange-d4</span>
+              <span class="bg-orange-d6 text-white p-1">orange-d6</span>
+              <span class="bg-orange-d8 text-white p-1">orange-d8</span>
+            </div>
+            <h3 id="purple" class="text-left pt-3">Purple</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-purple-l8 text-white p-1">purple-l8</span>
+              <span class="bg-purple-l6 text-white p-1">purple-l6</span>
+              <span class="bg-purple-l4 text-white p-1">purple-l4</span>
+              <span class="bg-purple-l2 text-white p-1">purple-l2</span>
+              <span class="bg-purple text-white p-1">purple </span>
+              <span class="bg-purple-d2 text-white p-1">purple-d2</span>
+              <span class="bg-purple-d4 text-white p-1">purple-d4</span>
+              <span class="bg-purple-d6 text-white p-1">purple-d6</span>
+              <span class="bg-purple-d8 text-white p-1">purple-d8</span>
+            </div>
+            <h3 id="sand" class="text-left pt-3">Sand</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-sand-l8 text-white p-1">sand-l8</span>
+              <span class="bg-sand-l6 text-white p-1">sand-l6</span>
+              <span class="bg-sand-l4 text-white p-1">sand-l4</span>
+              <span class="bg-sand-l2 text-white p-1">sand-l2</span>
+              <span class="bg-sand text-white p-1">sand </span>
+              <span class="bg-sand-d2 text-white p-1">sand-d2</span>
+              <span class="bg-sand-d4 text-white p-1">sand-d4</span>
+              <span class="bg-sand-d6 text-white p-1">sand-d6</span>
+              <span class="bg-sand-d8 text-white p-1">sand-d8</span>
+            </div>
+            <h3 id="gray" class="text-left pt-3">Gray</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-gray-l8 text-white p-1">gray-l8</span>
+              <span class="bg-gray-l6 text-white p-1">gray-l6</span>
+              <span class="bg-gray-l4 text-white p-1">gray-l4</span>
+              <span class="bg-gray-l2 text-white p-1">gray-l2</span>
+              <span class="bg-gray text-white p-1">gray </span>
+              <span class="bg-gray-d2 text-white p-1">gray-d2</span>
+              <span class="bg-gray-d4 text-white p-1">gray-d4</span>
+              <span class="bg-gray-d6 text-white p-1">gray-d6</span>
+              <span class="bg-gray-d8 text-white p-1">gray-d8</span>
+            </div>
+            <h3 id="dark-gray" class="text-left pt-3">Dark-Gray</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-dark-gray-l8 text-white p-1">dark-gray-l8</span>
+              <span class="bg-dark-gray-l6 text-white p-1">dark-gray-l6</span>
+              <span class="bg-dark-gray-l4 text-white p-1">dark-gray-l4</span>
+              <span class="bg-dark-gray-l2 text-white p-1">dark-gray-l2</span>
+              <span class="bg-dark-gray text-white p-1">dark-gray </span>
+              <span class="bg-dark-gray-d2 text-white p-1">dark-gray-d2</span>
+              <span class="bg-dark-gray-d4 text-white p-1">dark-gray-d4</span>
+              <span class="bg-dark-gray-d6 text-white p-1">dark-gray-d6</span>
+              <span class="bg-dark-gray-d8 text-white p-1">dark-gray-d8</span>
+            </div>
+            <h3 id="bw" class="text-left pt-3">Black & White</h3>
+            <div class="flex flex-col mt-1">
+              <span class="bg-black text-white p-1">black</span>
+              <span class="bg-white text-black p-1 mt-1">white</span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <aside class="col-12-sm col-2-md col-2-lg">
+          <!-- <div class="fixed fullwidth overflow-y-auto fullh"> -->
+          <ul
+            class="fixed width-9 docheight overflow-y-auto z-0 scroll-yellow"
+          >
+            <li><p class="font-sm">On this page</p></li>
+            <li class="mt-2">
+              <a href="#primary" class="link-blue-d4 font-xs">variables.scss</a>
+            </li>
+            <li class="mt-2">
+              <a href="#primary" class="link-blue-d4 font-xs">Font & Text</a>
+            </li>
+            <ul class="ml-1 mt-1">
+              <li>
+                <a href="#primary" class="link-blue-d4 font-xs"
+                  >Font Families</a
+                >
+              </li>
+            </ul>
+            <li class="mt-2">
+              <a href="#primary" class="link-blue-d4 font-xs">Spacing</a>
+            </li>
+            <ul class="ml-1 mt-1">
+              <li>
+                <a href="#primary" class="link-blue-d4 font-xs"
+                  >Margin & Padding</a
+                >
+              </li>
+            </ul>
+            <li class="mt-2">
+              <a href="#primary" class="link-blue-d4 font-xs">Breakpoints</a>
+            </li>
+            <li class="mt-2">
+              <a href="#colors" class="link-blue-d4 font-xs">Colors</a>
+            </li>
+          </ul>
+          <!-- </div> -->
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
